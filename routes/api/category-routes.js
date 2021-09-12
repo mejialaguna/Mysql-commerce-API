@@ -64,13 +64,19 @@ router.post('/', (req,res) => {
     console.log(err)
     res.status(500).json(err);
   })
+  console.log("category created")
 });
 
 
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  
+  Category.update({
+    where: {
+      id: req.params.id
+    }
+  })
+
 });
 
 router.delete('/:id', (req, res) => {
