@@ -16,7 +16,13 @@ router.get("/", (req, res) => {
     ],
   })
     .then((pData) => {
-      console.log(pData);
+      console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o `)
+
+      console.log("all product loaded")
       res.json(pData);
     })
     .catch((err) => {
@@ -24,7 +30,6 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
   
-  console.log("all product loaded")
 });
 
 
@@ -57,13 +62,18 @@ router.get("/:id", (req, res) => {
         res.status(400).json({ message: "product not found" });
         return;
       }
+      console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o `);
+      console.log("product founded")
       res.json(pData);
     })
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
     });
-  console.log("product founded")
 });
 
 
@@ -98,6 +108,11 @@ router.post("/", (req, res) => {
       console.log(err);
       res.status(400).json(err);
     });
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o `);
   console.log("product created")
 });
 
@@ -144,6 +159,11 @@ router.put("/:id", (req, res) => {
       // console.log(err);
       res.status(400).json(err);
     });
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o `);
   console.log("product updated")
 });
 
@@ -162,13 +182,18 @@ router.delete("/:id", (req, res) => {
         res.status(404).json({ message: "product not found" });
         return;
       }
+      console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o `);
+      console.log("product deleted");
       res.json(pData);
     })
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
     });
-  console.log("product deleted");
 });
 
 module.exports = router;

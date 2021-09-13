@@ -25,7 +25,16 @@ router.get("/", (req, res) => {
     .catch((err) => {
       res.status(404).json(err);
     });
-  console.log("tags found");
+  console.log(`
+                    tags found`);
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      
+      `);
 });
 
 
@@ -54,7 +63,16 @@ router.get("/:id", (req, res) => {
     .catch((err) => {
       res.json(500).json(err);
     });
-  console.log("tag id loaded");
+  console.log(`
+                   tag id loaded`);
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      
+      `);
 });
 
 
@@ -71,7 +89,16 @@ router.post("/", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-  console.log("tag created")
+  console.log(`
+                    tag created`)
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      
+      `);
 });
 
 
@@ -100,7 +127,16 @@ router.put("/:id", (req, res) => {
       console.log(err)
       res.status(500).json(err);
     })
-  console.log("tag updated")
+  console.log(`
+                    tag updated`)
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      
+      `);
 });
 
 
@@ -123,7 +159,16 @@ router.delete("/:id", (req, res) => {
       console.log(err)
     res.json(404).json(err)
     })
-  console.log("tag deleted")
+  console.log(`
+                    tag deleted`)
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      
+      `);
 });
 
 module.exports = router;

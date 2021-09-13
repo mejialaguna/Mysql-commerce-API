@@ -27,7 +27,15 @@ router.get('/', (req, res) => {
       console.log(err)
       res.status(500).json(err)
     })
-  console.log("displaying all categories")
+    console.log(`
+             displaying all categories`)
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      `);
 });
 
 
@@ -56,7 +64,15 @@ router.get('/:id', (req, res) => {
       console.log(err)
     res.status(500).json(err)
     })
-  console.log("category found")
+  console.log(`
+                 category found`)
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      `);
 });
 
 
@@ -72,8 +88,19 @@ router.post('/', (req,res) => {
     .catch((err) => {
     console.log(err)
     res.status(500).json(err);
-  })
-  console.log("category created")
+    })
+  
+  console.log(`
+                category created`)
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      
+      `);
+  
 });
 
 
@@ -101,7 +128,16 @@ router.put('/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-  console.log("category updated");
+  console.log(`
+                 category updated` );
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      
+      `);
 });
 
 
@@ -126,7 +162,16 @@ router.delete('/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     })
-  console.log("category erase")
+  console.log(`
+                   category erase`)
+  console.log(`
+      ,---.              |             
+      |  _.,---.,---.,---|  ,---, ,___, ,---. |
+      |   ||   ||   ||   |  |   | |   | |---' |
+      '---''---''---''---'  '---' '   ' '---' o
+      
+      
+      `);
 });
 
 module.exports = router;
