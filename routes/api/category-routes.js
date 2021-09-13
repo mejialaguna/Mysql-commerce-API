@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
+
+
+
 // The `/api/categories` endpoint
 
 router.get('/', (req, res) => {
@@ -23,8 +26,12 @@ router.get('/', (req, res) => {
     .catch((err) => {
       console.log(err)
       res.status(500).json(err)
-  })
+    })
+  console.log("displaying all categories")
 });
+
+
+
 
 
 router.get('/:id', (req, res) => {
@@ -96,6 +103,10 @@ router.put('/:id', (req, res) => {
     });
   console.log("category updated");
 });
+
+
+
+
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value

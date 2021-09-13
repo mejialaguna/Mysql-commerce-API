@@ -28,6 +28,8 @@ router.get("/", (req, res) => {
   console.log("tags found");
 });
 
+
+
 router.get("/:id", (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
@@ -52,8 +54,10 @@ router.get("/:id", (req, res) => {
     .catch((err) => {
       res.json(500).json(err);
     });
-  console.log("tag id found");
+  console.log("tag id loaded");
 });
+
+
 
 router.post("/", (req, res) => {
   // create a new tag
@@ -67,7 +71,10 @@ router.post("/", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+  console.log("tag created")
 });
+
+
 
 router.put("/:id", (req, res) => {
   // update a tag's name by its `id` value
@@ -95,6 +102,8 @@ router.put("/:id", (req, res) => {
     })
   console.log("tag updated")
 });
+
+
 
 router.delete("/:id", (req, res) => {
   // delete on tag by its `id` value

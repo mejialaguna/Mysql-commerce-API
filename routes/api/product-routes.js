@@ -23,6 +23,8 @@ router.get("/", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+  
+  console.log("all product loaded")
 });
 
 
@@ -61,7 +63,10 @@ router.get("/:id", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+  console.log("product founded")
 });
+
+
 
 // create new product
 router.post("/", (req, res) => {
@@ -93,7 +98,11 @@ router.post("/", (req, res) => {
       console.log(err);
       res.status(400).json(err);
     });
+  console.log("product created")
 });
+
+
+
 
 // update product
 router.put("/:id", (req, res) => {
@@ -135,7 +144,11 @@ router.put("/:id", (req, res) => {
       // console.log(err);
       res.status(400).json(err);
     });
+  console.log("product updated")
 });
+
+
+
 
 router.delete("/:id", (req, res) => {
   // delete one product by its `id` value
