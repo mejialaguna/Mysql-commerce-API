@@ -58,7 +58,11 @@
   <br/> 
   
   <img src="img/img-1.png"/> 
+  <br/>
+  <br/>
   <img src="img/img-2.png"/>
+  <br/>
+  <br/>
   <img src="img/img-3.png">
 
   <br>
