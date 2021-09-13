@@ -1,21 +1,148 @@
-# 13 Object Relational Mapping (ORM): E-commerce Back End
 
-Internet retail, also known as e-commerce, is the largest sector of the electronics industry, having generated an estimated US$29 trillion in 2017 (Source: United Nations Conference on Trade and Development). E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to the prevalence of these platforms, developers should understand the fundamental architecture of e-commerce sites.
+ <br/>
+  <br/>
+  
+  <div align="center">
+  
+  <h1>  Object Relational Mapping (ORM)<br> </h1>
+  <h2>E-commerce Back End</h2>
 
-Your challenge is to build the back end for an e-commerce site. You’ll take a working Express.js API and configure it to use Sequelize to interact with a MySQL database.
+  <br/>
+  <br/>
+  <br/>
+  
+  <a href="#about"><strong>Explore the screenshots »</strong></a>
+  <br/>
+  <br/>
+  
+  </div>
+  
+  
+  
+  <div align="center">
+  <br/>
+  
+  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_mejialaguna-ff1414.svg?style=flat-square)](https://github.com/mejialaguna/commerce.git)[![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+    
+  </div>
+  
+  <br/>
+  
+  <details open="open">
+  <summary>Table of Contents</summary>
+  
+  - [About](#about)
+  - [Built With](#built-with)
+  - [Installation](#installation)
+  - [Authors & contributors](#authors--contributors)
+  - [Acknowledgements](#Acknowledgements)
+  - [License](#License) 
+  
+  </details>  
+  
+  <br/>
+  
+  ## About
+  ---
 
-Because this application won’t be deployed, you’ll also need to create a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met. You’ll need to submit a link to the video and add it to the README of your project.
+  <br/>
 
-Before you start, clone [the starter code](https://github.com/coding-boot-camp/fantastic-umbrella).
+  This application is designed to add , update and remove employees ,departments and assign roles to all employees inside of a company . 
+  
+  <br/>
+  <br/>
+
+  <details open="open">
+  <summary>Usage Screenshots and Demo</summary>
+
+  <br/> 
+  
+  <img src="img/img_1.png"/> 
+  <img src="img/img_2.png"/>
+  <img src="img/gif.gif">
+
+  <br>
+  <br>
+
+  please to watch the A walkthrough video demonstrating the functionality of the application. <a href= "https://drive.google.com/file/d/11GBPvn26WUECgwKdOdPAMBkYycIm1SlL/view">click here </a>
+  
+  </details>
+  
+  <br/>
+  <br/>
+  
+  
+  ## Built With
+  ---
+
+  <br/>
+
+ 
+ >*  <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API">JavaScript</a>
+ >*  <a href="https://nodejs.org/en/">Node</a>
+  >*  <a href="https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm">express</a>
+ >*  <a href="https://www.w3schools.com/js/js_es6.asp">ES6</a>
+ >*  <a href="https://www.npmjs.com/package/mysql2">Node MySQL 2</a>
+ >*  <a href="https://sequelize.org/v3/">Sequelize</a>
+ >*  <a href="https://www.npmjs.com/package/nodemon">Nodemon</a>
+ >*  <a href="https://www.npmjs.com/package/dotenv">dotenv</a>
 
 
-## User Story
 
-```md
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
-```
+  
+  
+  <br/>
+  <br/>
+  
+  ##  Installation
+  ---
+
+  <br/>
+  
+   1. Install node js <a href="https://nodejs.org/en/"> [ HERE ]</a>. 
+   2. Install all Dependency .
+   3. Or type npm i inside your terminal.   
+   3. Clone this https://github.com/mejialaguna/commerce.git .
+   4. Run node seeds to start and after npm start inside your terminal. 
+   5. check all the routes using <a href="https://insomnia.rest/download" > Insomnia </a> or <a href="https://www.postman.com/">postman</a> testing API program
+   7. Enjoy.
+
+  <br/>
+  <br/>
+  
+  
+  ##  Authors & contributors
+  ---
+
+  <br/>
+   
+  Jose Luis Mejia Laguna.
+  
+  <br/>
+  <br/>
+  
+  ## Acknowledgements
+  ---
+
+  <br/>
+
+  First off , thanks for taking the time to check out my app! , contribution are what make this open-source community such an amazing place to learn , inspire and create. Any contribution you make will benefit everyone interested in using the app and are very appriciated.
+  ---
+
+  <br/>
+  <br/>
+  
+  ## License
+  ---
+  <br/>
+
+  [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
+  <br/>
+
+  
+  
+  <a href="https://github.com/mejialaguna/commerce/issues/1">For any Question and to point out a bug please click here...</a>
 
 ## Acceptance Criteria
 
@@ -32,143 +159,3 @@ THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 ```
-
-## Mock-Up
-
-The following animations show examples of the application's API routes being tested in Insomnia Core.
-
-The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia Core:
-
-![In Insomnia Core, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](./Assets/13-orm-homework-demo-01.gif)
-
-The second animation shows GET routes to return a single category, a single product, and a single tag being tested in Insomnia Core:
-
-![In Insomnia Core, the user tests “GET tag by id,” “GET Category by ID,” and “GET One Product.”](./Assets/13-orm-homework-demo-02.gif)
-
-The final animation shows the POST, PUT, and DELETE routes for categories being tested in Insomnia Core:
-
-![In Insomnia Core, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
-
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core.
-
-
-## Getting Started
-
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables to store sensitive data, like your MySQL username, password, and database name.
-
-Use the `schema.sql` file in the `db` folder to create your database using MySQL shell commands. Use environment variables to store sensitive data, like your MySQL username, password, and database name.
-
-### Database Models
-
-Your database should contain the following four models, including the requirements listed for each model:
-
-* `Category`
-
-  * `id`
-    * Integer
-    * Doesn't allow null values
-    * Set as primary key
-    * Uses auto increment
-
-  * `category_name`
-    * String
-    * Doesn't allow null values
-
-* `Product`
-
-  * `id`
-    * Integer
-    * Doesn't allow null values
-    * Set as primary key
-    * Uses auto increment
-
-  * `product_name`
-    * String
-    * Doesn't allow null values
-
-  * `price`
-    * Decimal
-    * Doesn't allow null values
-    * Validates that the value is a decimal
-
-  * `stock`
-    * Integer
-    * Doesn't allow null values
-    * Set a default value of 10
-    * Validates that the value is numeric
-
-  * `category_id`
-    * Integer
-    * References the `category` model's `id` 
-
-* `Tag`
-
-  * `id`
-    * Integer
-    * Doesn't allow null values
-    * Set as primary key
-    * Uses auto increment
-
-  * `tag_name`
-    * String
-
-* `ProductTag`
-
-  * `id`
-    * Integer
-    * Doesn't allow null values
-    * Set as primary key
-    * Uses auto increment
-
-  * `product_id`
-    * Integer
-    * References the `product` model's `id`
-
-  * `tag_id`
-    * Integer
-    * References the `tag` model's `id`
-
-### Associations
-
-You'll need to execute association methods on your Sequelize models to create the following relationships between them:
-
-* `Product` belongs to `Category`, as a category can have multiple products but a product can only belong to one category.
-
-* `Category` has many `Product` models.
-
-* `Product` belongs to many `Tag` models. Using the `ProductTag` through model, allow products to have multiple tags and tags to have many products.
-
-* `Tag` belongs to many `Product` models.
-
-**Hint**: Make sure you set up foreign key relationships that match the column we created in the respective models.
-
-### Fill out the API Routes to Perform RESTful CRUD Operations
-
-Fill out the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using your Sequelize models.
-
-**Note**: The functionality for creating the many-to-many relationship for products is already done for you.
-
-**Hint**: Be sure to look at your module project's code for syntax help and use your model's column definitions to figure out what `req.body` will be for POST and PUT routes!
-
-### Seed the Database
-
-After creating the models and routes, run `npm run seed` to seed data to your database so that you can test your routes.
-
-### Sync Sequelize to the Database on Server Start
-
-Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-# e_commerce-
-# e_commerce-
-# e_commerce-
