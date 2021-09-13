@@ -57,14 +57,14 @@
 
   <br/> 
   
-  <img src="img/img_1.png"/> 
-  <img src="img/img_2.png"/>
-  <img src="img/gif.gif">
+  <img src="img/img-1.png"/> 
+  <img src="img/img-2.png"/>
+  <img src="img/img-3.png">
 
   <br>
   <br>
 
-  please to watch the A walkthrough video demonstrating the functionality of the application. <a href= "https://drive.google.com/file/d/11GBPvn26WUECgwKdOdPAMBkYycIm1SlL/view">click here </a>
+  please to watch the A walkthrough video demonstrating the functionality of the application. <a href= "https://www.awesomescreenshot.com/video/5198646?key=d462621e857dedbab74c52a9be87a53a">click here </a>
   
   </details>
   
